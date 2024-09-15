@@ -1,0 +1,11 @@
+JavaScript Tutorial https://www.w3schools.com/js/
+Página estática vs. dinámica: Entendiendo las diferencias
+https://www.godaddy.com/resources/latam/stories/que-es-pagina-dinamica
+¿Cuál es la diferencia entre el front end y back end en el desarrollo de aplicaciones?
+https://aws.amazon.com/es/compare/the-difference-between-frontend-and-backend/#:~:text=El%20front%20end%20es%20aquello,permiten%20que%20la%20aplicaci%C3%B3n%20funcione.
+MERN Stack Explained
+https://www.mongodb.com/resources/languages/mern-stack
+Qué es Node.js y por qué debería usarlo
+https://kinsta.com/es/base-de-conocimiento/que-es-node-js/
+
+Recomendacion Node: LTS (estable)
