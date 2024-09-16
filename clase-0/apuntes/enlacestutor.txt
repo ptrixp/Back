@@ -19,3 +19,8 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Ob
 
 This, Getters y Setters en clases de Javascript
 https://www.aluracursos.com/blog/this-getters-y-setters-clases-de-javascript
+
+Clase 3:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises
