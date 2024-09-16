@@ -9,3 +9,13 @@ Qué es Node.js y por qué debería usarlo
 https://kinsta.com/es/base-de-conocimiento/que-es-node-js/
 
 Recomendacion Node: LTS (estable)
+
+Clase 2:
+JavaScript Object Methods
+https://www.w3schools.com/js/js_object_methods.asp
+
+Object
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+This, Getters y Setters en clases de Javascript
+https://www.aluracursos.com/blog/this-getters-y-setters-clases-de-javascript
