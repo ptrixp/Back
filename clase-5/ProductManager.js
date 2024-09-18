@@ -10,8 +10,8 @@ class ProductManager {
     async getProducts() {
         try {
             const productsJson = await fs.promises.readFile(this.pathFile, "utf-8");
-            const productsParse = JSON.parse(productsJson);
-            this.products = productsParse || [];
+            const productsParse = JSON.parse(productsJson);//
+            this.products = productsParse || []; 
             // console.log(this.products);
         } catch (error) {
             console.log(`Error: ${error.message}`);
@@ -33,7 +33,7 @@ class ProductManager {
     }
 
     async addProduct(product) {
-        try {
+        try { //sucede si esta bien
             const { title, description, price, thumbnail, code, stock } = product;
 
             const newProduct = {
@@ -55,7 +55,10 @@ class ProductManager {
 
             this.products.push(newProduct);
 
+            //archivo json estan en una bd, 
+            //this.product= para guardar y transformar los archivos en un json para la bd
             await fs.promises.writeFile(this.pathFile, JSON.stringify(this.products));
+        
         } catch (error) {
             console.log(`Error: ${error.message}`);
         }
