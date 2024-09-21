@@ -110,9 +110,9 @@ app.get("/register", (req, res) => {
         lastName,
         age,
     };
-
+    //registrar el usuario
     users.push(newUser);
-
+    //enviar al registro
     res.send(users);
 });
 //puerto
