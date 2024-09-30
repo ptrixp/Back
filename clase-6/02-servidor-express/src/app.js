@@ -100,7 +100,7 @@ app.get("/usuarios2", (req, res) => {
 });
 
 const users = [];
-
+//creando una nueva funcion de registro
 app.get("/register", (req, res) => {
     const { name, lastName, age } = req.query;
 
