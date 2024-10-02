@@ -1,0 +1,3 @@
+npm init -y
+npm install nodemon -D //solo durante el proyecto
+npm i express
