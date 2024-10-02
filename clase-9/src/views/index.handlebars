@@ -1,8 +1,21 @@
 <h1>Bienvenidos a los motores de plantillas</h1>
 <h2>nombre {{usuario.nombre}} {{usuario.apellido}}</h2>
 
+{{!-- CONDICIONALES --}}
 {{#if usuario.mayorEdad}}
 <p>Es mayor de edad</p>
 {{else}}
 <p>anda a dormir</p>
 {{/if}}
+
+{{!-- CICLOS --}}
+{{#each arrayProductos}}
+<div>
+    <h2>Titulo {{this.nombre}} </h2>
+    <p>Descripcion {{this.descripcion}} </p>
+    <p>precio {{this.precio}} </p>
+    <button>Comprar</button>
+</div>
+{{/each}}
+
+<script src="js/script.js"></script>
