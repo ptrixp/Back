@@ -3,16 +3,18 @@ import ProductManager from "../managers/product-manager.js";
 const manager = new ProductManager("./src/data/productos.json");
 const router = express.Router();
 
-//La ruta raíz GET / deberá listar todos los productos de la base. (Incluyendo la limitación ?limit del desafío anterior
+//La ruta raíz GET / deberá listar todos los productos de la base. 
+//(Incluyendo la limitación ?limit del desafío anterior
 
 router.get("/", async (req, res) => {
     try {
+        //poner el limit 
         const limit = req.query.limit; 
         const productos = await manager.getProducts(); 
 
         if(limit) {
             res.json(productos.slice(0, limit)); 
-        } else {
+        } else { //si no hay limite que pase todos
             res.json(productos); 
         }
     } catch (error) {
@@ -52,7 +54,8 @@ router.post("/", async (req, res) => {
 
 })
 
-//4) Actualizar! Lo pueden practicar y lo vemos en clase cualquier duda. 
+//4) Actualizar! 
+
 
 //5) La ruta DELETE /:pid deberá eliminar el producto con el pid indicado. 
 

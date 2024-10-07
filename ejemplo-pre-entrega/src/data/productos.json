@@ -88,14 +88,5 @@
     "img": "sin imagen",
     "code": "abc567",
     "stock": 33
-  },
-  {
-    "id": 11,
-    "title": "Helado",
-    "description": "De Menta granizada",
-    "price": 5000,
-    "img": "sin imagen",
-    "code": "aaa558",
-    "stock": 300
   }
 ]
