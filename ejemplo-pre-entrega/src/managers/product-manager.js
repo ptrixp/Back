@@ -1,7 +1,5 @@
 import fs from "fs"; 
 
-
-
 class ProductManager {
     static ultId = 0;
 
