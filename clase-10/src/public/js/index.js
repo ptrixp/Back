@@ -29,10 +29,10 @@ socket.on("usuarios", arrayUsuarios => {
 })
 
 
-//Creamos un formulario para crear usuarios: 
+//Creamos un FORMULARIO para crear usuarios: 
 
 const formUsuario = document.getElementById("formUsuario"); 
-//Aca estoy vinculando mi formulario del html con la constante llamada "formUsuario"
+//Vinculo mi formulario del html con la constante llamada "formUsuario"
 
 //Creamos un escuchador de eventos para captar el momento en donde se envia el formulario. 
 
