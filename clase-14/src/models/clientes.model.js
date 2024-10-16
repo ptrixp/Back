@@ -11,7 +11,7 @@ const clienteSchema = new mongoose.Schema({
     edad: Number
 })
 
-//Definimos el modelo: 
+//Definimos el modelo: (nombre de la coleccion y schema)
 const ClienteModel = mongoose.model("clientes", clienteSchema); 
 
 export default ClienteModel; 

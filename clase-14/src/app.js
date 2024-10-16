@@ -16,8 +16,8 @@ import clientesRouter from "./routes/clientes.router.js";
 
 //Nos conectamos a la Base de datos: 
 import mongoose from "mongoose";
-
-mongoose.connect("mongodb+srv://coderhouse74515:coderhouse@cluster0.xv444.mongodb.net/Tienda?retryWrites=true&w=majority&appName=Cluster0")
+//ir a drivers y copiar el enlace
+mongoose.connect("mongodb+srv://coderhouse:coderhouse@cluster0.pkbm4.mongodb.net/Tienda?retryWrites=true&w=majority&appName=Cluster0")
     .then(() => console.log("Conectados a la BD"))
     .catch((error) => console.log("Tenemos un error: ", error))
 
