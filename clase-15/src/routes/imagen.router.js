@@ -31,7 +31,7 @@ router.post("/upload", async (req, res) => {
 
         //Guardamos el objeto en la base de datos. 
         await imagen.save(); 
-
+        //respuesta de servidor-. redireccionar
         res.redirect("/");
     } catch (error) {
         res.status(500).send("Error interno en el servidor"); 

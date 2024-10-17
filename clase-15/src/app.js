@@ -7,7 +7,7 @@
 //MongoDB y Mongoose
 
 //Actividad: Generar una versión propia y simplificada de Pinterest. 
-//Almacenar usuarios/imagenes en MongoDB. 
+//Almacenar usuarios/imagenes en MongoDB. (usuarios en Back II)
 
 ///////////////////////////////////////////////////////////////////
 
@@ -29,14 +29,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true})); 
 app.use(express.static("./src/public")); 
 const storage = multer.diskStorage({
+    //direccionado en public
     destination: (req, file, cb) => {
         cb(null, "./src/public/img"); 
-    }, 
+    }, //nombre del archivo original
     filename: (req, file, cb) => {
         cb(null, file.originalname); 
     }
 })
-
+//
 app.use(multer({storage}).single("image")); 
 
 //Rutas 
