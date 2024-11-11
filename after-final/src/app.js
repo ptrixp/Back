@@ -4,6 +4,7 @@ import { Server } from "socket.io";
 import productRouter from "./routes/products.router.js";
 import cartRouter from "./routes/carts.router.js";
 import viewsRouter from "./routes/views.router.js";
+import "./database.js";
 
 
 //PUERTOS
