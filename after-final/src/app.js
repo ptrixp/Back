@@ -45,17 +45,18 @@ io.on("connection", async (socket) => {
     // Enviar la lista inicial de productos al cliente
     socket.emit("productos", await manager.getProducts());
 
-    // Escuchar cuando un cliente agrega un producto
-    socket.on("nuevoProducto", async (producto) => {
+    //Agregamos productos nuevos: 
+    socket.on("agregarProducto", async (producto) => {
         await manager.addProduct(producto);
-        const productosActualizados = await manager.getProducts();
-        io.emit("productosActualizados", productosActualizados);// Enviar a todos los clientes
-    });
+        //Actualizar la vista de productos en stock
+        io.sockets.emit("productos", await manager.getProducts());
+    })
 
-    // Escuchar cuando un cliente elimina un producto
-    socket.on("eliminarProducto", async (idProducto) => {
-        await manager.deleteProduct(idProducto);
-        const productosActualizados = await manager.getProducts();
-        io.emit("productosActualizados", productosActualizados);
-    });
+    //Eliminamos un producto:
+    socket.on("eliminarProducto", async (id) => {
+        await manager.deleteProduct(id); 
+
+        //No se olviden! Enviar la lista actualizada de productos!
+        io.sockets.emit("productos", await manager.getProducts());
+    })
 });
